@@ -1,0 +1,29 @@
+name: Test Project
+on:
+    push:
+        branches:
+            - 'main'
+        # tags:
+        #     - v1.**
+        # paths:
+        #     - '**.js'
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get code
+              uses: actions/checkout@v3
+            - name: setting up NodeJs
+              uses: actions/setup-node@v3
+              with:
+                node-version: 18
+            - name: Installing dependencies
+              uses: npm ci
+            - name: Running test
+              uses: npm test
+
+
+
+
+
+
