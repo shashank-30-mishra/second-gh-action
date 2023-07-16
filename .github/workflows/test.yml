@@ -1,12 +1,13 @@
 name: Test Project
-on:
-    push:
-        branches:
-            - 'main'
+on: [push, workflow_dispatch]
+    # push:
+    #     branches:
+    #         - 'main'
         # tags:
         #     - v1.**
         # paths:
         #     - '**.js'
+
 jobs:
     test:
         runs-on: ubuntu-latest
