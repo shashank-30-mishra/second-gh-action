@@ -19,7 +19,7 @@ on:
             - '.github/workflows/*'
 jobs:
     deploy:
-        runs-on: ubuntu-lates
+        runs-on: ubuntu-latest
         steps:
             - name: Output event data
               run: echo "${{ toJSON(github.event) }}"
