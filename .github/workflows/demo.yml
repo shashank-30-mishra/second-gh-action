@@ -1,22 +1,22 @@
 name: events-demo-workflow
-on:
-    pull_request:
-        types:
-            - opened
-        branches:
-            - 'main'
-            - 'dev-*'
-            - 'feat/**'
-    workflow_dispatch:
-    push:
-        branches:
-            - 'main'
-            - 'dev-*'   # this dev-man
-            - 'feat/**' # this feat/dc/ssf-fvf-d/sd
-        # paths:
-        #     - 'src/*'
-        paths-ignore:
-            - '.github/workflows/*'
+# on:
+#     pull_request:
+#         types:
+#             - opened
+#         branches:
+#             - 'main'
+#             - 'dev-*'
+#             - 'feat/**'
+#     workflow_dispatch:
+#     push:
+#         branches:
+#             - 'main'
+#             - 'dev-*'   # this dev-man
+#             - 'feat/**' # this feat/dc/ssf-fvf-d/sd
+#         # paths:
+#         #     - 'src/*'
+#         paths-ignore:
+#             - '.github/workflows/*'
 jobs:
     deploy:
         runs-on: ubuntu-latest

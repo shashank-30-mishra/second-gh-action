@@ -1,15 +1,15 @@
 name: Test Project
 # on: [push, workflow_dispatch]
 on:
-    push:
-        branches:
-          - 'main'
-        # tags:
-        #   - v1.**
-        # paths:
-        #   - '**.js'
-        paths-ignore:
-          - '.github/workflows/*'
+    # push:
+    #     branches:
+    #       - 'main'
+    #     # tags:
+    #     #   - v1.**
+    #     # paths:
+    #     #   - '**.js'
+    #     paths-ignore:
+    #       - '.github/workflows/*'
     workflow_dispatch:  
         
 
