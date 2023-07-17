@@ -1,12 +1,17 @@
 name: Test Project
-on: [push, workflow_dispatch]
-    # push:
-    #     branches:
-    #         - 'main'
+# on: [push, workflow_dispatch]
+on:
+    push:
+        branches:
+          - 'main'
         # tags:
-        #     - v1.**
+        #   - v1.**
         # paths:
-        #     - '**.js'
+        #   - '**.js'
+        paths-ignore:
+          - '.github/workflows/*'
+    workflow_dispatch:  
+        
 
 jobs:
     test:
