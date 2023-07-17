@@ -13,10 +13,10 @@ on:
             - 'main'
             - 'dev-*'   # this dev-man
             - 'feat/**' # this feat/dc/ssf-fvf-d/sd
-    paths:
-        - 'src/*'
-    paths-ignore:
-        - '.github/workflows/*'
+        paths:
+            - 'src/*'
+        paths-ignore:
+            - '.github/workflows/*'
 jobs:
     deploy:
         runs-on: ubuntu-lates
@@ -40,7 +40,7 @@ jobs:
 
             - name: running build
               run: npm run build
-              
+
             - name: deploying
               run: echo "deploying....."
 
