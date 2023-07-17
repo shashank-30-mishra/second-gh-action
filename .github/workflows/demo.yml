@@ -1,5 +1,5 @@
 name: events-demo-workflow
-# on:
+on:
 #     pull_request:
 #         types:
 #             - opened
@@ -7,7 +7,7 @@ name: events-demo-workflow
 #             - 'main'
 #             - 'dev-*'
 #             - 'feat/**'
-#     workflow_dispatch:
+    workflow_dispatch:
 #     push:
 #         branches:
 #             - 'main'
